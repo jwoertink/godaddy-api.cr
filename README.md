@@ -1,6 +1,6 @@
-# godaddy-api.cr
+# Godaddy::API
 
-TODO: Write a description here
+A simple API wrapper for [Godaddy](https://www.godaddy.com/)
 
 ## Installation
 
@@ -8,14 +8,15 @@ Add this to your application's `shard.yml`:
 
 ```yaml
 dependencies:
-  godaddy-api.cr:
-    github: [your-github-name]/godaddy-api.cr
+  godaddy-api:
+    github: jwoertink/godaddy-api.cr
+    branch: master
 ```
 
 ## Usage
 
 ```crystal
-require "godaddy-api.cr"
+require "godaddy-api"
 ```
 
 TODO: Write usage instructions here
@@ -26,7 +27,7 @@ TODO: Write development instructions here
 
 ## Contributing
 
-1. Fork it ( https://github.com/[your-github-name]/godaddy-api.cr/fork )
+1. Fork it ( https://github.com/jwoertink/godaddy-api.cr/fork )
 2. Create your feature branch (git checkout -b my-new-feature)
 3. Commit your changes (git commit -am 'Add some feature')
 4. Push to the branch (git push origin my-new-feature)
@@ -34,4 +35,4 @@ TODO: Write development instructions here
 
 ## Contributors
 
-- [[your-github-name]](https://github.com/[your-github-name]) Jeremy Woertink - creator, maintainer
+- [jwoertink](https://github.com/jwoertink) Jeremy Woertink - creator, maintainer

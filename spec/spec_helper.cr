@@ -1,2 +1,2 @@
 require "spec"
-require "../src/godaddy-api.cr"
+require "../src/godaddy-api"
