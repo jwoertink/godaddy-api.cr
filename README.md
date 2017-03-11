@@ -17,9 +17,18 @@ dependencies:
 
 ```crystal
 require "godaddy-api"
+
+Godaddy::API.configure do |c|
+  c.api_key = "whatever"
+  c.api_secret = "also_whatever"
+end
+
+client = Godaddy::API.new
+results = client.get("/domains")
+
+puts results # => []
 ```
 
-TODO: Write usage instructions here
 
 ## Development
 
