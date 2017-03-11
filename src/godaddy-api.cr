@@ -16,7 +16,7 @@ module Godaddy
     end
 
     def initialize
-      @client = HTTP::Client.new(host: BASE_URL, tls: true)
+      @client = HTTP::Client.new(host: BASE_URL + "/#{API.configuration.version}", tls: true)
       @headers = HTTP::Headers.new
       @headers["Authorization"] = "sso-key #{API.configuration.api_key}:#{API.configuration.api_secret}"
       @headers["Content-Type"] = "application/json"
