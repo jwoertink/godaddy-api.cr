@@ -7,12 +7,11 @@ module Godaddy
     BASE_URL = "https://api.godaddy.com"
 
     def self.configure
-      @@configuration ||= Configuration.new
-      yield @@configuration
+      yield configuration
     end
 
     def self.configuration
-      @@configuration
+      @@configuration ||= Configuration.new
     end
 
     def initialize
